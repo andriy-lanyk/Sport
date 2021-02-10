@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спорт Івано-Франківщини sport.if.ua</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+
+</head>
+<body>
+    <header >
+		<div id="us_ent">
+            <form action="" method="post" class="user_form">
+                <input name="user_remember" type="hidden" value="true" >    
+                <input name="user_username" type="text" value="E-mail" onfocus="this.select(); if(this.value=='E-mail') this.value='';" onblur="if(this.value=='') this.value='E-mail';" class="user_n" maxlength="100">
+                <input name="user_pass" type="password" value="111111" onfocus="this.select(); if(this.value=='111111') this.value='';" onblur="if(this.value=='') this.value='111111';" class="user_n" maxlength="20">
+                <input name="submit" type="submit" value="Вхід" class="button" align="right">
+            </form>
+        </div>
+        <div id="us_reg">
+            <form action="" method="post" class="user_form">
+                <input type="text" name="username" value="E-mail" onfocus="this.select(); if(this.value=='E-mail') this.value='';" onblur="if(this.value=='') this.value='E-mail';" class="user_n" maxlength="100" align="absmiddle"/>
+                <label for="password">Пароль</label> 
+                <input id="password" name="password" type="password" value="" class="user_n" maxlength="20" align="absmiddle" />
+                <input name="name" type="text" value="Ім'я на сайті" onfocus="this.select(); if(this.value=='Ім\'я на сайті') this.value='';" onblur="if(this.value=='') this.value='Ім\'я на сайті';" class="user_n" align="absmiddle"  maxlength="50" /> 
+                <input type="checkbox" name="rules" value="true" align="right" id="rules_ok" /> - погоджуюсь з <a id="rule" href="#rules">правилами сайту</a> 
+                <input class="button" type="submit" value="Зберегти" align="absmiddle" />
+            </form>
+        </div>
+        <div id="header">
+            <div class="top_inpage">
+                <script type="text/javascript" src='https://ep.umobile.pl/js_banner?data={"id_area":210838,"act":"load"}'></script>
+            </div>
+            <div id="header_block">
+                <a href="/"><img src="/skins/newskin/logo_1.png" id="logo"></a>
+                            <table border="0" cellpadding="0" cellspacing="0" id="small_menu">
+                    <tr>
+                        <td width="208">
+                            <a href="/objects/" class="someClass" title="Каталог спортивних закладів, гуртків, секцій та спортсменів"><span class="sp"></span>&nbsp;&nbsp;&nbsp;Спортивне Прикарпаття</a>
+                        </td>
+                        <td>
+                            <a href="/tables/" class="someClass" title="Турнірні таблиці"><span class="tb"></span>&nbsp;&nbsp;&nbsp;Табло</a>
+                        </td>
+                        <td class="tblend">
+                            <a href="/result/" class="someClass" title="Календар спортивних подій"><span class="bl"></span>&nbsp;&nbsp;&nbsp;Афіша</a>
+                        </td>
+                    </tr>
+                </table>
+                <form name="search" action="/search/" method="post" id="search_block">
+                    <input name="srch" type="text" value="Пошук" onfocus="this.select(); if(this.value=='Пошук') this.value='';" onblur="if(this.value=='') this.value='Пошук';" maxlength="30"><input type="image" src="/skins/newskin/search_button.jpg" value="Знайти">
+                    <div id="search_cat">
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td class="left">
+                                    <label>Новини</label>
+                                </td><td class="right">
+                                    <span class="niceCheck"><input name="news" type="checkbox" value="1" id="news" checked="checked" /></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left" style="padding-bottom:10px;">
+                                    <label>Об'єкти</label>
+                                </td>
+                                <td class="right" style="padding-bottom:10px;">
+                                    <span class="niceCheck"><input name="buildings" type="checkbox" value="1" id="buildings" checked="checked" /></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+                <div id="user_panel"><span class="user_enter">Вхід</span> | <span class="user_register">Реєстрація</span></div>
+            </div>
+        </div>
+        <div id="header_menu">
+            <div class="arrow_down"></div>
+            <a class="menu" href="/"><span class="menu1" style="color:#00407a">Головна<div style="height:10px; margin-top:31px;" align="center"><div class="triangle-up" style="border-bottom-color: #c0c0c0;"></div></div></span></a><a class="menu" href="/football/"><span class="menu2" >Футбол<div style="height:10px; margin-top:31px;" align="center"><div class="triangle-up" style="display: none"></div></div></span></a><a class="menu" href="/futsal/"><span class="menu3" >Футзал<div style="height:10px; margin-top:31px;" align="center"><div class="triangle-up" style="display: none"></div></div></span></a><a class="menu" href="/basketball/"><span class="menu4" >Баскетбол<div style="height:10px; margin-top:31px;" align="center"><div class="triangle-up" style="display: none"></div></div></span></a><a class="menu" href="/athletics/"><span class="menu5" >Легка атлетика<div style="height:10px; margin-top:31px;" align="center"><div class="triangle-up" style="display: none"></div></div></span></a><a class="menu" href="/boxingwrestling/"><span class="menu6" >Бокс/Боротьба<div style="height:10px; margin-top:31px;" align="center"><div class="triangle-up" style="display: none"></div></div></span></a><a class="menu" href="/wintersports/"><span class="menu7" >Зимові<div style="height:10px; margin-top:31px;" align="center"><div class="triangle-up" style="display: none"></div></div></span></a><a class="menu" href="/other/"><span class="menu8" >Інші<div style="height:10px; margin-top:31px;" align="center"><div class="triangle-up" style="display: none"></div></div></span></a><div id="submenu">
+        <hr />
+        <a href="/others/Водні"><div>Водні</div></a>
+        <a href="/others/Шахи"><div>Шахи</div></a>
+        <a href="/others/Волейбол"><div>Волейбол</div></a>
+        <a href="/others/Теніс"><div>Теніс</div></a>
+        <a href="/others/Хокей"><div>Хокей</div></a>
+        <a href="/others/Авто"><div>Авто</div></a>
+        <a href="/others/Гімнастика"><div>Гімнастика</div></a>
+        <a href="/others/Важка атлетика"><div>Важка атлетика</div></a>
+        <a href="/others/Олімп"><div>Олімп</div></a>
+        <a href="/others/Пауерліфтинг"><div>Пауерліфтинг</div></a>
+    </div>    </div>
+    </header>
+
+
+    <main>
+        
+        <div id="content_b">
+            <div class="content">
+        
+        <table border="0" width="100%">
+            <tr>
+                <td class="main_baner_l" align="left">
+                    <A href="https://team1.com.ua/" target="_blank"><IMG height=60 src="http://www.sport.if.ua/uploads/team1-468.gif" width=468 border=0></A>            </td>
+                <td class="main_baner_r" align="right">
+                    <A href="http://uragan.if.ua/"><IMG height=60 src="uploads/uragan.gif" width=468 border=0></A>            </td>
+            </tr>
+        </table>
+        
+        <div class="main_topnews">
+        <table width="100%" border="0" cellspacing="0">
+            <tr valign="top">
+                <td>
+                    <img src="/news_images/2021/02/10/146542646_2794730247482389_878125234518186906_n.jpeg"  height="258" align="left"/><!--width="460"-->
+                    <img src="/skins/newskin/icon_cat5.png" class="cat_icon" />
+                </td>
+                <td class="main_topnews_cont">
+                    <div class="main_topnews_cont_title"><a href="/athletics/25406.html">Юлія Шуляр кваліфікувалася до півфіналу</a></div>
+                    Сьогодні в Сумах стартував основний турнір зимової частини сезону - чемпіонат України з легкої атлетики в приміщенні.                <div class="main_topnews_cont_open" align="right"><a href="/athletics/25406.html">Читати далі</a></div>
+                </td>
+            </tr>
+        </table>
+    </div>    
+        <div style="position:relative;">
+            <div class="main_news_blocks">
+                <a href="/athletics/25405.html">
+        <div class="main_news_cont">
+            <img src="/news_images/2021/02/10/148147850_2796972503924830_7694237407097683724_n.jpeg" width="220" align="left"/>
+            <img src="/skins/newskin/icon_cat5.png" class="cat_icon_main_news" />
+            <div class="main_news_cont_title"><span>Прикарпатські спортсмени на всеукраїнських змаганнях</span></div>
+        </div>
+    </a><a href="/boxingwrestling/25404.html">
+        <div class="main_news_cont">
+            <img src="/news_images/2021/02/10/cd66a7a18d37d7e5dd969c249e9a1ecb_L.jpeg" width="220" align="left"/>
+            <img src="/skins/newskin/icon_cat6.png" class="cat_icon_main_news" />
+            <div class="main_news_cont_title"><span>Дзюдоїсти взяли участь у Чемпіонаті України з боротьби самбо і бойового самбо</span></div>
+        </div>
+    </a><a href="/futsal/25403.html">
+        <div class="main_news_cont">
+            <img src="/news_images/2021/02/10/knyazhuy-uragan.jpeg" width="220" align="left"/>
+            <img src="/skins/newskin/icon_cat3.png" class="cat_icon_main_news" />
+            <div class="main_news_cont_title"><span>Чемпіонат Івано-Франківська: Тема-Захід перемогли ФК "Рома"</span></div>
+        </div>
+    </a><a href="/futsal/25402.html">
+        <div class="main_news_cont">
+            <img src="/news_images/2021/02/10/131891080_3654489291261060_4409496520242333837_o.jpg" width="220" align="left"/>
+            <img src="/skins/newskin/icon_cat3.png" class="cat_icon_main_news" />
+            <div class="main_news_cont_title"><span>Максим ПАВЛЕНКО: "На шанувальників футзалу очікують два яскраві протистояння"</span></div>
+        </div>
+    </a>        </div>
+            <div class="main_news_list">
+                <a href="/football/25401.html">
+        <div class="main_news_list_block">
+        
+            <span>Помер Юрій Шайкін...</span>
+            <div>9.2.2021</div>
+            <img src="/skins/newskin/icon_cat_r2.png"  />
+        </div>
+    </a><hr /><a href="/futsal/25400.html">
+        <div class="main_news_list_block">
+        
+            <span>Ураган дізнався ім'я суперника по 1/4 Кубка України</span>
+            <div>9.2.2021</div>
+            <img src="/skins/newskin/icon_cat_r3.png"  />
+        </div>
+    </a><hr /><a href="/football/25399.html">
+        <div class="main_news_list_block">
+        
+            <span>Олександр Каденко: "Від клубів ПФЛ немає жодного підтвердження про зняття зі змагань"</span>
+            <div>9.2.2021</div>
+            <img src="/skins/newskin/icon_cat_r2.png"  />
+        </div>
+    </a><hr /><a href="/basketball/25398.html">
+        <div class="main_news_list_block">
+        
+            <span>Президент ФБУ закликав МОЗ повернути вболівальників на трибуни
+    </span>
+            <div>8.2.2021</div>
+            <img src="/skins/newskin/icon_cat_r4.png"  />
+        </div>
+    </a>        </div>
+            <div class="main_right_block">
+                <a href="/allnews/"><div class="main_all_news"><span>Всі новини</span></div></a>
+                <div class="main_baner220x387"><a href="" target="_blank"><img src="http://www.sport.if.ua/uploads/hutro.gif"></a></div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <table width="980" height="200" border="0" id="home_middle_block">
+        <tr valign="top">
+            <td>
+                <div align="center" class="home_middle_block_title">
+                    <a href="/football/"><img src="/skins/newskin/icon_futbol.jpg" width="58" height="58"/><br />
+                    Футбол</a>
+                </div>
+                <a href="/football/25401.html">
+        <div id="ctegory_item">
+            <div>Помер Юрій Шайкін...</div>
+        </div>
+    </a><hr /><a href="/football/25399.html">
+        <div id="ctegory_item">
+            <div>Олександр Каденко: "Від клубів ПФЛ немає жодного підтвердження про зняття зі змагань"</div>
+        </div>
+    </a><hr /><a href="/football/25396.html">
+        <div id="ctegory_item">
+            <div>Трагічно загинув ветеран прикарпатського футболу Роман Мазур</div>
+        </div>
+    </a>        </td>
+            <td>
+                <div align="center" class="home_middle_block_title">
+                    <a href="/futsal/"><img src="/skins/newskin/icon_futzal.jpg" width="58" height="58"/><br />
+                    Футзал</a>
+                </div>
+                <a href="/futsal/25403.html">
+        <div id="ctegory_item">
+            <div>Чемпіонат Івано-Франківська: Тема-Захід перемогли ФК "Рома"</div>
+        </div>
+    </a><hr /><a href="/futsal/25402.html">
+        <div id="ctegory_item">
+            <div>Максим ПАВЛЕНКО: "На шанувальників футзалу очікують два яскраві протистояння"</div>
+        </div>
+    </a><hr /><a href="/futsal/25400.html">
+        <div id="ctegory_item">
+            <div>Ураган дізнався ім'я суперника по 1/4 Кубка України</div>
+        </div>
+    </a>        </td>
+            <td>
+                <div align="center" class="home_middle_block_title">
+                    <a href="/basketball/"><img src="/skins/newskin/icon_basketbol.jpg" width="58" height="58"/><br />
+                    Баскетбол</a>
+                </div>
+                <a href="/basketball/25398.html">
+        <div id="ctegory_item">
+            <div>Президент ФБУ закликав МОЗ повернути вболівальників на трибуни
+    </div>
+        </div>
+    </a><hr /><a href="/basketball/25397.html">
+        <div id="ctegory_item">
+            <div>Тренера Говерли відсторонено від баскетболу
+    </div>
+        </div>
+    </a><hr /><a href="/basketball/25393.html">
+        <div id="ctegory_item">
+            <div>"Франківськ" пройшов "Динамо" в Кубку</div>
+        </div>
+    </a>        </td>
+            <td rowspan="2" style="border:none; background:none;">
+                <div class="main_baner220x387" style="margin-bottom:20px; height:300px;">
+                    
+                </div>
+                <div class="main_baner220x481">
+                    <a href="http://www.sport.if.ua/advertising.html" target="_blank"><img src="http://www.sport.if.ua/uploads/756.gif"></a>        	</div>
+            </td>
+        </tr>
+        <tr valign="top">
+            <td>
+                <div align="center" class="home_middle_block_title">
+                    <a href="/athletics/"><img src="/skins/newskin/icon_leg_atl.jpg" width="58" height="58"/><br />
+                    Легка атлетика</a>
+                </div>
+                <a href="/athletics/25406.html">
+        <div id="ctegory_item">
+            <div>Юлія Шуляр кваліфікувалася до півфіналу</div>
+        </div>
+    </a><hr /><a href="/athletics/25405.html">
+        <div id="ctegory_item">
+            <div>Прикарпатські спортсмени на всеукраїнських змаганнях</div>
+        </div>
+    </a><hr /><a href="/athletics/25389.html">
+        <div id="ctegory_item">
+            <div>7 березня в Франківську відбудеться Lady Run IF</div>
+        </div>
+    </a>        </td>
+            <td>
+                <div align="center" class="home_middle_block_title">
+                    <a href="/boxingwrestling/"><img src="/skins/newskin/icon_boxing.jpg" width="58" height="58"/><br />
+                    Бокс/Боротьба</a>
+                </div>
+                <a href="/boxingwrestling/25404.html">
+        <div id="ctegory_item">
+            <div>Дзюдоїсти взяли участь у Чемпіонаті України з боротьби самбо і бойового самбо</div>
+        </div>
+    </a><hr /><a href="/boxingwrestling/25376.html">
+        <div id="ctegory_item">
+            <div>Дмитро Руденко втілює проекти в життя</div>
+        </div>
+    </a><hr /><a href="/boxingwrestling/25364.html">
+        <div id="ctegory_item">
+            <div>Прикарпатські спортсменки привезли медалі із столиці</div>
+        </div>
+    </a>        </td>
+            <td>
+                <div align="center" class="home_middle_block_title">
+                    <a href="/wintersports/"><img src="/skins/newskin/icon_zymovi.jpg" width="58" height="58"/><br />
+                    Зимові</a>
+                </div>
+                <a href="/wintersports/25305.html">
+        <div id="ctegory_item">
+            <div>На Буковелі проведуть змагання найкращих сноубордистів України</div>
+        </div>
+    </a><hr /><a href="/wintersports/25292.html">
+        <div id="ctegory_item">
+            <div>Медаль Тараса Лесюка на Кубку IBU</div>
+        </div>
+    </a><hr /><a href="/wintersports/25220.html">
+        <div id="ctegory_item">
+            <div>Тарас Лесюк в складі збірної України на січневі етапи Кубка світу</div>
+        </div>
+    </a>        </td>
+        </tr>
+    </table>
+    
+    <div align="center" style="margin:0 auto 20px; width:990px;">
+        <div id="rtn4p_1394_ua"><center><a href="http://ru.redtram.com/" target="_blank">Loading...</a></center></div>
+        <script language="javascript" type="text/javascript" src="http://js.ua.redtram.com/n4p/s/p/sport.if.ua_1394_ua.js"></script>
+    </div>
+    
+    <div class="content" style="width:100%;height:515px;">
+    
+        <div id="content_bottom_conteyner">
+            <div class="gallery_link"><a href="/photo/">ВСІ ФОТО</a> <span>|</span> <a href="/video/">ВСІ ВІДЕО</a></div>
+            <hr class="gal" />
+    
+            <div class="section">
+                <ul class="tabs">
+                    <li class="tabs_photo current someClass" title="Фотогалерея"></li>
+                    <li class="tabs_video someClass" title="Відеогалерея"></li>
+                </ul>
+                <div class="box visible">
+                    <div class="gallery_item_cont" style="background:url(/news_images/2018/06/22/35882112_1921671804531158_2957793296417554432_n.jpg) no-repeat center center;" id="18499" onclick="location.href='/photo/18499.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title18499">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Покуття (Коломия) - Карпати (Брошнів) - 2:1. Фотозвіт фіналу                <div>22.6.2018</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2017/06/13/18952666_1525592610805748_4052088637906837313_n.jpg) no-repeat center center;" id="15644" onclick="location.href='/photo/15644.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title15644">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Колос Городенківщини - Карпати (Коломия) - 1:0. Фото з матчу                <div>13.6.2017</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2016/12/31/IMG_3810.jpg) no-repeat center center;" id="14854" onclick="location.href='/photo/14854.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title14854">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Нагородили воїнів року                <div>31.12.2016</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2016/01/25/IMG_6742.jpg) no-repeat center center;" id="12996" onclick="location.href='/photo/12996.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title12996">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Масове купання тхеквондистів та боксерів на Водохреща                <div>25.1.2016</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/12/21/43.jpg) no-repeat center center;" id="12814" onclick="location.href='/photo/12814.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title12814">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    БК "Будівельник" - БК "Говерла" 81-68                <div>21.12.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/11/23/AI2V1375.jpg) no-repeat center center;" id="12636" onclick="location.href='/photo/12636.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title12636">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    БК "Харків" - БК "Говерла" 82-71. Фотогалерея                <div>23.11.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/11/21/IMG_7636.jpg) no-repeat center center;" id="12615" onclick="location.href='/photo/12615.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title12615">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    "Кремінь" - "Говерла" 68:79. Фотогалерея                <div>21.11.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/11/09/5EQIAGzYDlw.jpg) no-repeat center center;" id="12518" onclick="location.href='/photo/12518.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title12518">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Відкритий кубок Івано-Франківська зі спортивного танцю                <div>9.11.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/11/08/galych_goverla08.jpg) no-repeat center center;" id="12515" onclick="location.href='/photo/12515.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title12515">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Галичина - Говерла 83:71 (фотозвіт)                <div>8.11.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/09/01/12.jpg) no-repeat center center;" id="12062" onclick="location.href='/photo/12062.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title12062">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Наймолодші франківські регбісти таборували у Рівному (фото)                <div>1.9.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/09/01/38.jpg) no-repeat center center;" id="12061" onclick="location.href='/photo/12061.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title12061">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Юнаки ДЮСШ-2-“Роланд» завершили літо тренувальними зборами (фото)                <div>1.9.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/05/10/164901199.jpg) no-repeat center center;" id="11450" onclick="location.href='/photo/11450.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title11450">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    У Буковелі відбувся ІІ етап гірських перегонів "Карпатські Вершини"                <div>10.5.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/04/21/IMG_5233.JPG) no-repeat center center;" id="11298" onclick="location.href='/photo/11298.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title11298">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Перший фінальний тур чемпіонату області з волейболу серед чоловічих команд І ліги                <div>21.4.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/03/18/3_IMGP1306.jpg) no-repeat center center;" id="11071" onclick="location.href='/photo/11071.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title11071">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Зимовий чемпіонат України зі спортивної ходьби                <div>18.3.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/03/15/tab_final.jpg) no-repeat center center;" id="11049" onclick="location.href='/photo/11049.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title11049">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Чемпіонат Івано-Франківська: нагородження в об'єктиві                <div>15.3.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/02/27/IMG_7259.JPG) no-repeat center center;" id="10950" onclick="location.href='/photo/10950.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10950">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    XIV всеукраїнський турнір із дзюдо серед юнаків і дівчат у Калуші                <div>27.2.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/02/02/BBNZ5DSC_0772.JPG) no-repeat center center;" id="10774" onclick="location.href='/photo/10774.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10774">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Кубок області з важкої атлетики в Калуші                <div>2.2.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/01/28/IMG_3291.JPG) no-repeat center center;" id="10735" onclick="location.href='/photo/10735.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10735">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Всеукраїнський турнір з вільної боротьби пам'яті Сергія Нігояна                <div>28.1.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/01/27/ura_titan155.jpg) no-repeat center center;" id="10729" onclick="location.href='/photo/10729.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10729">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Ураган - Титан-Зоря - 1:2                <div>27.1.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/01/22/20150122_100037.jpg) no-repeat center center;" id="10696" onclick="location.href='/photo/10696.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10696">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    "Різдвяний Івано-Франківськ": фото з турніру                <div>22.1.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/01/22/10419581_623176304454949_7738527872589890786_n.jpg) no-repeat center center;" id="10693" onclick="location.href='/photo/10693.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10693">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Масове купання на Водохрещу від ЦПЧ "Золотий дракон" з тхеквондо ВТФ                <div>22.1.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/01/18/IMG_0003_.jpg) no-repeat center center;" id="10675" onclick="location.href='/photo/10675.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10675">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Ферро-ЗНТУ - Говерла 89:78. Фото                <div>18.1.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/01/15/IMG_6283.JPG) no-repeat center center;" id="10648" onclick="location.href='/photo/10648.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10648">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    БК "Говерла" - БК "Будівельник" 59:61                <div>15.1.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/01/15/IMG_4507.jpg) no-repeat center center;" id="10647" onclick="location.href='/photo/10647.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10647">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    БК "Говерла" - БК "Київ" 66:62                <div>15.1.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/01/13/wisla1.jpg) no-repeat center center;" id="10636" onclick="location.href='/photo/10636.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10636">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Десятирічні "ураганівці" провели спаринг з краківською "Віслою"                <div>13.1.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/01/09/75Ix4hWqfEk.jpg) no-repeat center center;" id="10619" onclick="location.href='/photo/10619.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10619">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Кубок Буковеля з фрі-файту-2015                <div>9.1.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/01/05/5N18E4enZkhD0SbY.jpg) no-repeat center center;" id="10604" onclick="location.href='/photo/10604.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10604">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    "Новорічні старти" від БК "Говерла"                <div>5.1.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2014/12/24/internat192.jpg) no-repeat center center;" id="10524" onclick="location.href='/photo/10524.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10524">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    "Ураганівці" привітали вихованців школи-інтернату з прийдешніми святами                <div>24.12.2014</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2014/12/24/newyear01.jpg) no-repeat center center;" id="10521" onclick="location.href='/photo/10521.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10521">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Гравці "Урагану" влаштували передноворічну фотосесію з уболівальниками                <div>24.12.2014</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2014/12/22/ura_sumdu186.jpg) no-repeat center center;" id="10505" onclick="location.href='/photo/10505.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10505">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    "Ураган" - "СумДУ" 3:2                <div>22.12.2014</div>
+                </div>
+            
+        </div>  
+        
+    </div>            </div>
+                <div class="box">
+                    <div class="gallery_item_cont" style="background:url(/news_images/2018/01/25/b18i2029.jpg) no-repeat center center;" id="16720" onclick="location.href='/video/16720.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title16720">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Канал 402: У "Буковелі" відбувся Чемпіонат України з гірсько-лижного спорту                <div>25.1.2018</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2017/06/13/19146187_1845280712389781_8635433445086415058_n.jpg) no-repeat center center;" id="15643" onclick="location.href='/video/15643.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title15643">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    ФК Калуш - ГалВапно - 5:0. Відео голів                <div>13.6.2017</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2016/07/27/5NPXH72f6.jpeg) no-repeat center center;" id="14067" onclick="location.href='/video/14067.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title14067">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Арсенал-Київщина - Тепловик - 0:6. Відео матчу                <div>27.7.2016</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/08/17/dush_170815.jpg) no-repeat center center;" id="11973" onclick="location.href='/video/11973.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title11973">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Коломийська ДЮСШ-1 відзначила 60-річчя із дня заснування                <div>17.8.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/03/21/10561582_1534620083426991_9133557549524874196_n.jpg) no-repeat center center;" id="11093" onclick="location.href='/video/11093.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title11093">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    ФК "Галичина": президент та головний тренер про перший матч команди                <div>21.3.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/03/20/3_IMGP1493.jpg) no-repeat center center;" id="11081" onclick="location.href='/video/11081.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title11081">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Зимовий кубок України зі спортивної ходьби                <div>20.3.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/03/14/72f6.jpeg) no-repeat center center;" id="11044" onclick="location.href='/video/11044.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title11044">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Відео матчів Золотої ліги за 14 березня                <div>14.3.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/03/09/72f6.jpeg) no-repeat center center;" id="11020" onclick="location.href='/video/11020.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title11020">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Чемпіонат області. Відео недільних матчів                <div>9.3.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/03/08/221125__max_news.jpg) no-repeat center center;" id="11009" onclick="location.href='/video/11009.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title11009">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Чемпіонат Івано-Франківська: відео з матчів суботи                <div>8.3.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/03/06/10384584_964230366944152_7940199021677255947_n.jpg) no-repeat center center;" id="10997" onclick="location.href='/video/10997.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10997">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Фінал Кубка області з футзалу. Епіцентр К - Віза Вторма                <div>6.3.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/03/01/C19LU542313 (1).jpg) no-repeat center center;" id="10962" onclick="location.href='/video/10962.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10962">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Відео матчів чемпіонату Івано-Франківська (субота)                <div>1.3.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/02/06/1.jpg) no-repeat center center;" id="10807" onclick="location.href='/video/10807.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10807">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Відео півфінальних поєдинків кубка області                <div>6.2.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/02/01/C19LU542313 (1).jpg) no-repeat center center;" id="10763" onclick="location.href='/video/10763.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10763">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Гранд Корона - Івано-Франківськгаз - 2:1. Відео з матчу                <div>1.2.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/02/01/72f6.jpeg) no-repeat center center;" id="10762" onclick="location.href='/video/10762.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10762">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    ВО "Свобода" - "ЮТІМ_КЕП" - 0:4. Відео матчу                <div>1.2.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/01/18/IMG_0034_.jpg) no-repeat center center;" id="10674" onclick="location.href='/video/10674.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10674">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Євген Мурзін: "Ми дозволили Ферро грати у свій баскетбол"                <div>18.1.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2015/01/17/VIWJEXyh5d8 (1).jpg) no-repeat center center;" id="10663" onclick="location.href='/video/10663.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10663">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Хіт (Київ) - Ураган. Відео кубкової дуелі                <div>17.1.2015</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2014/12/28/1.jpg) no-repeat center center;" id="10564" onclick="location.href='/video/10564.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10564">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Ельдорадо-Галицький двір - СК Городенка - 4:4. Відео з матчу                <div>28.12.2014</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2014/12/28/big_DSC_9496 (1).JPG) no-repeat center center;" id="10560" onclick="location.href='/video/10560.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10560">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Епіцентр К - ДПС - 3:2 (відео матчу)                <div>28.12.2014</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2014/12/28/IXWVVDBQME46ICH.JPG) no-repeat center center;" id="10556" onclick="location.href='/video/10556.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10556">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Івано-Франківськгаз - Алан - 6:2 (відео з матчу)                <div>28.12.2014</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2014/12/23/cYHZHdzp_k0.jpg) no-repeat center center;" id="10520" onclick="location.href='/video/10520.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10520">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Зимовий кубок ХФЛ. Фінал                <div>23.12.2014</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2014/12/22/IMG_8953.jpg) no-repeat center center;" id="10503" onclick="location.href='/video/10503.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10503">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Євген Мурзін: "Ми поступаємося у класі Хіміку"                <div>22.12.2014</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2014/12/21/Nt0O4V6HkD0.jpg) no-repeat center center;" id="10494" onclick="location.href='/video/10494.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10494">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    ДПС - Віза Вторма - 2:1 (відео)                <div>21.12.2014</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2014/12/16/C19LU542313 (1).jpg) no-repeat center center;" id="10464" onclick="location.href='/video/10464.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10464">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Чемпіонат Івано-Франківська з футзалу. Коментарі учасників та організаторів                <div>16.12.2014</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2014/12/14/NEZ4ZIMG_6245.jpg) no-repeat center center;" id="10448" onclick="location.href='/video/10448.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10448">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Євген Мурзін та Олександр Шостуха розповіли про програний матч у Днірпопетровську                <div>14.12.2014</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2014/12/12/_MG_0022.jpg) no-repeat center center;" id="10429" onclick="location.href='/video/10429.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10429">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Сергій Алфьоров та Євген Мурзін проаналізували поразку "Говерли" від "Дніпро-Азоту"                <div>12.12.2014</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2014/12/09/SXC12HDH6JZCVOZ.JPG) no-repeat center center;" id="10408" onclick="location.href='/video/10408.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10408">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Відео з матчів ФК "Звір"                <div>9.12.2014</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2014/12/08/1.jpg) no-repeat center center;" id="10395" onclick="location.href='/video/10395.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10395">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Ураган-2 КФВ - Ельдорадо-Галицький двір: 7:5. Відео з матчу                <div>8.12.2014</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2014/12/07/IXWVVDBQME46ICH.JPG) no-repeat center center;" id="10385" onclick="location.href='/video/10385.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10385">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Івано-Франківськгаз - Сан Ремо - 6:5. Відео матчу                <div>7.12.2014</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2014/12/06/IMG_0584.jpg) no-repeat center center;" id="10383" onclick="location.href='/video/10383.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10383">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Євген Мурзін: "Що робити в останні 7 секунд?"                <div>6.12.2014</div>
+                </div>
+            
+        </div>  
+        
+    </div><div class="gallery_item_cont" style="background:url(/news_images/2014/11/29/AV3T8553.jpg) no-repeat center center;" id="10333" onclick="location.href='/video/10333.html'">
+    
+        <div class="tr-up" style="position:absolute; bottom:0px;"></div>
+        
+        <div class="gallery_item_cont_title_cont" id="title10333">
+        
+            <div class="tr-up"></div>
+            
+                <div class="gallery_item_cont_title">
+                    Євген Мурзін назвав причини поразки від МБК "Миколаїв" (відео)                <div>29.11.2014</div>
+                </div>
+            
+        </div>  
+        
+    </div>            </div>
+            </div>
+            <div class="new_blogs">
+            <div class="new_blogs_title">Авторські колонки</div>
+                    <div class="blogs_item_bottom">
+    
+            <a href="/blogs/trajturak/9421.html"><div><b>Футбольний блог від Романа Трайтурака</b></div>
+            Український футбол: шанс для змін</a><br />
+            <div>12.7.2014</div>
+    
+        </div><hr class="bl" />	<div class="blogs_item_bottom">
+    
+            <a href="/blogs/beskud/9367.html"><div><b>Олександр Фотуйма</b></div>
+            Система організації тренувань і змагань з видів легкої атлетики на Івано-Франківщині</a><br />
+            <div>4.7.2014</div>
+    
+        </div><hr class="bl" />	<div class="blogs_item_bottom">
+    
+            <a href="/blogs/demyanchuk/9356.html"><div><b>Персональний блог Олександра Дем'янчука</b></div>
+            Полтавщина очима Галичанина</a><br />
+            <div>2.7.2014</div>
+    
+        </div>        </div>
+    </div>    </div>
+        
+
+    
+
+                
+
+    </main>
+    
+    <footer >
+
+        <div id="footer">
+            <div id="footer_menu">
+                <a class="menu_bottom" href="/"><span class="menu1" style="color:#00407a">Головна</span></a><a class="menu_bottom" href="/football/"><span class="menu2" >Футбол</span></a><a class="menu_bottom" href="/futsal/"><span class="menu3" >Футзал</span></a><a class="menu_bottom" href="/basketball/"><span class="menu4" >Баскетбол</span></a><a class="menu_bottom" href="/athletics/"><span class="menu5" >Легка атлетика</span></a><a class="menu_bottom" href="/boxingwrestling/"><span class="menu6" >Бокс/Боротьба</span></a><a class="menu_bottom" href="/wintersports/"><span class="menu7" >Зимові</span></a><a class="menu_bottom" href="/other/"><span class="menu8" >Інші</span></a>        </div>
+            <div id="footer_content">
+                <div id="bigmir_block">
+                    <!--bigmir)net TOP 100-->
+                    <script type="text/javascript" language="javascript"><!--
+                    bmN=navigator,bmD=document,bmD.cookie='b=b',i=0,bs=[],bm={v:16857753,s:16857753,t:29,c:bmD.cookie?1:0,n:Math.round((Math.random()* 1000000)),w:0};
+                    for(var f=self;f!=f.parent;f=f.parent)bm.w++;
+                    try{if(bmN.plugins&&bmN.mimeTypes.length&&(x=bmN.plugins['Shockwave Flash']))bm.m=parseInt(x.description.replace(/([a-zA-Z]|\s)+/,''));
+                    else for(var f=3;f<20;f++)if(eval('new ActiveXObject("ShockwaveFlash.ShockwaveFlash.'+f+'")'))bm.m=f}catch(e){;}
+                    try{bm.y=bmN.javaEnabled()?1:0}catch(e){;}
+                    try{bmS=screen;bm.v^=bm.d=bmS.colorDepth||bmS.pixelDepth;bm.v^=bm.r=bmS.width}catch(e){;}
+                    r=bmD.referrer.slice(7);if(r&&r.split('/')[0]!=window.location.host){bm.f=escape(r).slice(0,400);bm.v^=r.length}
+                    bm.v^=window.location.href.length;for(var x in bm) if(/^[vstcnwmydrf]$/.test(x)) bs[i++]=x+bm[x];
+                    bmD.write('<a href="http://www.bigmir.net/" target="_blank" onClick="img=new Image();img.src="http://www.bigmir.net/?cl=16857753";"><img src="http://c.bigmir.net/?'+bs.join('&')+'"  width="160" height="19" border="0" alt="bigmir)net TOP 100" title="bigmir)net TOP 100"></a>');
+                    //-->
+                    </script>
+                    <noscript>
+                    <a href="http://www.bigmir.net/" target="_blank"><img src="http://c.bigmir.net/?v16857753&s16857753&t29" width="160" height="19" alt="bigmir)net TOP 100" title="bigmir)net TOP 100" border="0" /></a>
+                    </noscript>
+                    <!--bigmir)net TOP 100-->
+                </div>
+                <div id="footer_content_text">Обласний спортивний інтернет-портал sport.if.ua створений за ініціативи ВАТ «Прикарпаттяобленерго»,<br />громадської організації «Прикарпатська асоціація муніципального розвитку» та за підтримки обласної<br />державної адміністрації.<hr />
+                З питань розміщення реклами на сайті дивитись розділ <a href="/advertising.html"><strong>для рекламодавців</strong></a>
+                </div>
+                <table cellpadding="1" cellspacing="1" border="0" id="social_icon">
+                    <tr>
+                        <td>
+                            <a href="https://www.facebook.com/groups/108297225899641/" target="_blank"><div class="soc_fb"></div></a>
+                        </td>
+                        <td>
+                            <a href="https://twitter.com/sportifua" target="_blank"><div class="soc_tv"></div></a>
+                        </td>
+                        <td>
+                            <a href="http://vk.com/sport_if_ua" target="_blank"><div class="soc_vk"></div></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="footer_copyright">
+                <span class="copy"><a href="/">&copy; 2021 <strong>sport.if.ua</strong></a></span>
+                <span class="design"><a href="http://webmil.com.ua/">Дизайн <img src="/skins/newskin/logo_webmil.jpg" align="absmiddle" /></a></span> 
+            </div>
+        </div>
+    
+    
+    <div style="display:none;">
+        <div id="rules">
+            <p>
+                <strong><span style="font-size:14px;">Правила спілкування на SPORT.IF.UA</span></strong></p>
+            <p>
+                <strong>Розділ 1. Загальні положення</strong></p>
+            <ol>
+                <li>
+                    Правила спілкування на SPORT.IF.UA (надалі також &ndash; &laquo;Правила&raquo;)встановлюють порядок реєстрації на сайті SPORT.IF.UA, вимоги до змісту повідомлень, що залишаються на форумі, а також встановлює підстави відповідальності і систему покарань за порушення цих правил.</li>
+                <li>
+                    Правила створені для врегулювання спілкування між зареєстрованими користувачами сайту.</li>
+                <li>
+                    Виконання положень даних Правил є обов&rsquo;язковим для всіх відвідувачів сайту SPORT.IF.UA</li>
+            </ol><br />
+            
+            <p>
+                <strong>Розділ 2. Реєстрація на сайті</strong></p>
+            <p>
+                1. Відвідувачі сайту, які мають бажання залишати на сайті коментарі та спілкуватися зобов&rsquo;язані зареєструватися. Для цього потрібно заповнити реєстраційну форму, виконавши вказані нижче вимоги:</p>
+            <ul>
+                <li>
+                    Логін не має містити нецензурну лексику, грубі чи провокаційні вислови</li>
+                <li>
+                    Логін не має містити прізвища відомих політиків, як сьогодення, так і минулого.</li>
+            </ul><br />
+            
+            <p>
+                2. При порушенні вказаних вимог логін відвідувача сайту заблоковується безстроково.&nbsp; Блокування може бути знято після усунення недоліків.</p>
+            <p>
+                <strong>Розділ 3. На сайті забороняється:</strong></p>
+            <ol>
+                <li>
+                    Використання нецензурної лексика.</li>
+                <li>
+                    Прояви расизму, національної чи релігійної нетерпимості.</li>
+                <li>
+                    Образа <strong><u>зареєстрованих відвідувачів сайту</u></strong>, що проявляється в навмисному приниженні їхньої честі та гідності, як прямому, так і опосередкованому, а також пов&rsquo;язані з місцем їхнього проживання (навмисне спотворення назви міста, команди) чи спортивними уподобаннями (клубною приналежністю).</li>
+                <li>
+                    Грубість по відношенню до конкретного зареєстрованого відвідувача сайту (перехід на особистості).</li>
+                <li>
+                    Повідомлення, що мають провокаційний характер (тобто, створюють загрозу виникнення конфліктних ситуацій).</li>
+                <li>
+                    Розповсюдження спаму.</li>
+                <li>
+                    Розміщення зображень чи посилань (лінк) на сайти порнографічного характеру чи будь-якого іншого, який містить інформацію, що суперечить принципам суспільної моралі.</li>
+                <li>
+                    Розміщення персональних даних зареєстрованих користувачів сайту без їхньої на це згоди.</li>
+                <li>
+                    Обговорення дій адміністрації сайту щодо справедливості блокування того чи іншого відвідувача сайту. Такі повідомлення будуть вилучатися із коментарів. А порушники блокуватися.</li>
+                <li>
+                    Оффтоп, тобто написання повідомлень, які виходять за рамки встановленої теми обговорення. Особливу увагу приділятиметься політичному оффтопу, Повідомлення, написані великими буквами (Caps Lock).</li>
+                <li>
+                    Написання відвідувачем сайту більшості повідомлень транслітом (передача українського тексту латинськими буквами).</li>
+                <li>
+                    Реєстрація більше одного логіна на сайті, використання чужого логіна під час блокування.</li>
+            </ol><br />
+            
+            <p>
+                <strong>Розділ 4. Покарання</strong></p>
+            <p>
+                За порушення Розділу 3 Правил до відвідувачів сайту застосовуються наступні покарання.</p>
+            <ol>
+                <li>
+                    Блокування на 5 днів (за порушення всіх пунктів правил спілкування Розділу 4, окрім тих, які вказані в п.4.1, 4.2, 4.5.</li>
+                <li>
+                    Пролонговане блокування. По досягненню відвідувачем сайту 5-ти 5-денних строків блокування, кожний новий строк блокування становитиме 10 днів (зі збільшенням строку блокування після кожних 5 блокувань).<br />
+                    За кожен новий логін відвідувачу додається по 10 днів блокування. Тобто, за перший клон &ndash; 10, другий клон &ndash; 20, третій клон &ndash; 30. У випадку четвертого клонування проводиться безстрокове блокування аканта відвідувача сайту.</li>
+                <li>
+                    Безстрокове блокування &ndash; за порушення п.3.6, 3.7, 3.8., а також за злісне та систематичне порушення правил спілкування на сайті.</li>
+            </ol><br />
+    
+    
+            <p>
+                <strong>Розділ 5. Прикінцеві положення</strong></p>
+            <ol>
+                <li>
+                    Адміністрація сайту залишає за собою право у спірних ситуаціях приймати рішення на власний розсуд.</li>
+                <li>
+                    Адміністрація сайту не несе відповідальності за зміст повідомлень відвідувачів сайту.</li>
+            </ol><br />
+    
+    
+                    <div align="center">
+                        <input class="rulles_button" type="submit" value="ПОГОДЖУЮСЬ" align="absmiddle" id="rulles-button-ok" />&nbsp;&nbsp;&nbsp;
+                        <input class="rulles_button" type="submit" value="ВІДМОВИТИСЬ" align="absmiddle" id="rulles-button-close" />
+                    </div>
+                </div>
+            </div>
+
+    </footer>
+
+    <script type="text/javascript" src='https://ep.umobile.pl/js_banner?data={"id_area":210835,"act":"load"}'></script>
+    <script type="text/javascript" src='https://ep.umobile.pl/js_banner?data={"id_area":210836,"act":"load"}'></script>
+
+    <!-- <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+                <button class="modal__button" data-modal-close>
+                    <svg class="modal__icon" width="18" height="18">
+                        <use href="./images/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
+
+                <form class="modal-form">
+                    <p class="modal-form__title">
+                        Оставьте свои данные, мы вам перезвоним
+                    </p>
+
+                    <label class="modal-form__lable">
+                        <span class="modal-form__content">Имя</span>
+                        <div class="modal-form__field">
+                            <input class="modal-form__input" type="text" name="name">
+                            <svg class="modal-form__icon" width="18" height="18">
+                                <use href="./images/symbol-defs2.svg#icon-person-black"></use>
+                            </svg>
+                        </div>
+                    </label>
+        
+
+                    <label class="modal-form__lable">
+                        <span class="modal-form__content">Телефон</span>
+                        <div class="modal-form__field">
+                            <input class="modal-form__input" type="tel" name="phone_number">
+                            <svg class="modal-form__icon" width="18" height="18">
+                                <use href="./images/symbol-defs2.svg#icon-phone-black"></use>
+                            </svg>
+                        </div>
+                    </label>
+
+                    <label class="modal-form__lable">
+                        <span class="modal-form__content">Почта</span>
+                        <div class="modal-form__field">
+                            <input class="modal-form__input" type="email" name="email">
+                            <svg class="modal-form__icon" width="18" height="18">
+                                <use href="./images/symbol-defs2.svg#icon-email-black"></use>                                </svg>
+                            </div>
+                    </label>
+
+                    <label class="modal-form__feedback">
+                        <span class="modal-form__content">Коментарий</span>
+                        <textarea class="modal-form__textarea" name="feedback" placeholder="Введите текст"></textarea>
+                    </label>
+    
+                    <div class="modal-form__checkbox-field">
+                        <input class="modal-form__checkbox-input visually-hidden" type="checkbox" name="consent" value="consent" id="checkbox">
+                        <label class="modal-form__checkbox" for="checkbox">
+                            <span class="modal-form__checkbox-text">Соглашаюсь с рассылкой и принимаю <a href="#" class="modal-form__contract">Условия договора</a></span>
+                        </label>
+                    </div>
+    
+                    <button class="modal-form__button" type="submit">
+                        Отправить
+                    </button>
+                </form>
+            
+        </div>
+    </div>
+    
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script> -->
+</body>
+</html>

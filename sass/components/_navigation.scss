@@ -1,8 +1,16 @@
-.site-navigation {
+.navigation {
   height: 100%;
+  margin-top: -15px;
+  margin-right: -15px;
       
-    &__link {
-        padding: 32px 0;
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+
+      margin-top: 25px;
+      margin-right: 15px;
+
+        padding: 15px 0;
         font-weight: $font-weight-medium;
         font-size: $font-size-primary;
         line-height: $line-height-primary;
@@ -10,13 +18,11 @@
         color: $text-title-color;
       
         @include transition (color);
-        
-        @media screen and (min-width: 1200px) {
-          display: flex;
-          padding-top: 33px;
-          padding-bottom: 33px;
-        }
       }
+
+    &__item {
+      width: calc((100% - 8 * 15px) / 4);
+    }
       
     &__link--current {
         color: $active-color;
@@ -40,27 +46,3 @@
         color: $active-color;
       }
 }  
-
-@media screen and (max-width: 767px) {
-  .header__nav {
-    display: none;}
-}
-
-/* TABLET */
-
-@media screen and (min-width: 768px) {
-  .header__nav {
-    display: flex;
-    align-items: center;
-  }
-  
-  .site-navigation {
-    display: flex;
-    align-items: center;
-    margin-right: 84px;
-
-    &__item:not(:last-child) {
-      margin-right: 50px;
-    }
-  }
-}

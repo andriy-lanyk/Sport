@@ -1,75 +1,57 @@
- 
-  body {
-    color: $text-primary-color;
-    font-family: $font-primary;
-    letter-spacing: 0.03em;
-  }
+body {
+  color: $text-primary-color;
+  font-family: $font-primary;
+  letter-spacing: 0.03em;
+}
 
-  body.modal-open {
-    overflow: hidden;
-  }
-  
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+body.modal-open {
+  overflow: hidden;
+}
 
-    @media screen and (min-width: 480px) {
-      width: 480px;
-    }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
-      width: 768px;
-    }
+a {
+  text-decoration: none;
+}
 
-    @media screen and (min-width: 1200px) {
-      width: 1200px;
-    }
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  p {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
-  section {
-    width: 100%;
+section {
+  width: 100%;
+  padding: 0 15px;
+}
 
-    @media screen and (min-width: 1200px) {
-      padding: 94px 0;
-    }
-  }
-  
-  .list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  
-  .visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-  }
-  
-  .hero__button,
-  .project__button,
-  .subscribe__button,
-  .modal__button,
-  .modal-form__button {
-    cursor: pointer;
-  }
-  
+header {
+  padding: 0 15px;
+}
+
+footer {
+  padding: 0 15px;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
