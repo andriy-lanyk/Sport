@@ -1,0 +1,95 @@
+.contacts {
+      
+    &__link {
+        font-weight: $font-weight-medium;
+        font-size: $font-size-modal-content;
+        line-height: $line-height-title;
+        letter-spacing: 0.02em;
+        color: $text-primary-color;
+      
+        @include transition (color);
+      }
+      
+    &__icon {
+      margin-right: 8px;
+        fill: currentColor;
+      }
+
+    &__icon--envelope {
+      width: 14px;
+      height: 10px;
+    }
+
+    &__icon--phone {
+      width: 10px;
+      height: 14px;
+    }
+      
+    &__link:hover,
+    &__link:focus {
+        color: $active-color;
+      }
+      
+    @media screen and (max-width: 767px) {
+        & {
+          display: none;}
+      }
+
+      /* TABLET */
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        & {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 21px 0;
+        }
+
+        &__link {
+          display: flex;
+        }
+
+        &__item:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+
+      /* DESKTOP */
+
+    @media screen and (min-width: 1200px) {
+        & {
+          display: flex;
+          margin-left: auto;
+        }
+      
+        &__item:not(:last-child) {
+          margin-right: $margin-header-item;
+        }
+        
+        &__link {
+          display: flex;
+          padding-top: 32px;
+          padding-bottom: 32px;
+
+          font-size: $font-size-primary;
+          line-height: $line-height-primary;
+        }
+
+        &__icon {
+          margin-right: 10px;
+        }
+
+        &__icon--envelope {
+          width: 16px;
+          height: 12px;
+        }
+        
+        &__icon--phone {
+          width: 10px;
+          height: 16px;
+        }
+    }
+
+}
+  
+  
