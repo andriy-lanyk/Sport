@@ -2,6 +2,7 @@ body {
   color: $text-primary-color;
   font-family: $font-primary;
   letter-spacing: 0.03em;
+  background-color: $footer-text-color;
 }
 
 body.modal-open {
@@ -31,14 +32,21 @@ img {
 section {
   width: 100%;
   padding: 0 15px;
+  margin-bottom: 30px;
 }
 
 header {
   padding: 0 15px;
+  margin-bottom: 30px;
+  
+  background-color: #e0e0e0;
 }
 
 footer {
-  padding: 0 15px;
+  padding: 15px;
+  padding-bottom: 0;
+
+  background-color: $footer-primary-color;
 }
 
 .list {

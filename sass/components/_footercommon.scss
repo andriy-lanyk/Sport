@@ -1,61 +1,20 @@
-.footer {
-  width: 100%;
-  padding: 60px 0;
-  background-color: $footer-primary-color;
+.creater {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.6);
+}
 
-    &__container {
-      text-align: center;
-      
-      @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-      }
+.advertising {
+  margin-bottom: 30px;
+  text-align: justify;
+  color: #fff;
 
-      @media screen and (min-width: 1200px) {
-        text-align: start;
-      }
-    }
-      
-    &__address {
-      margin-bottom: 8px;
-      font-style: normal;
-      font-size: $font-size-primary;
-      line-height: $line-height-text;
-
-      color: $bg-primary-color;
-
-      @media screen and (min-width: 1200px) {
-        margin-bottom: 9px;
-      }
-    }
-      
-    &__item:not(:last-child) {
-      margin-bottom: 8px;
-
-      @media screen and (min-width: 1200px) {
-        margin-bottom: 9px;
-      }
-    }
-      
-    &__contact {
-      font-size: $font-size-primary;
-      line-height: $line-height-text;
-      color: $footer-text-color;
-    }
-
-    &__contacts {
-      margin-bottom: 60px;
-
-      @media screen and (min-width: 768px) {
-        margin-left: 61px;
-        margin-right: 165px;
-      }
-
-      @media screen and (min-width: 1200px) {
-        margin: 0;
-      }
-    }
+  &__link {
+    font-weight: $font-weight-bold;
+    text-decoration: underline;
+    color: #519af6;
+  }
 }
   
 

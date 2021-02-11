@@ -1,11 +1,46 @@
 .menu {
   width: 100%;
-  background-color: $bg-primary-color;
+  margin-bottom: 30px;
+
+  background-color: transparent;
 
     &__list {
       display: flex;
       align-items: center;
       justify-content: space-between;
+    }
+
+    &__item {
+      padding: 10px;
+    }
+
+    &__link {
+      padding: 10px;
+
+      font-family: $font-primary;
+      font-weight: $font-weight-medium;
+      font-size: $font-size-subtitle-button;
+      line-height: $line-height-project;
+      letter-spacing: 0.03em;
+
+      color: $text-title-color;
+      background-color: $bg-secondary-color;
+
+      border: 1px solid rgba(0, 63, 122, 0.6);
+      border-radius: 4px;
+      
+      box-shadow: 0px 3px 1px $box-shadow-transition-color, 0px 1px 2px $box-shadow-transition-color,
+          0px 2px 2px $box-shadow-transition-color;
+      
+      @include transition (background-color, color, box-shadow);
+    }
+      
+    &__link:hover,
+    &__link:focus {
+      background-color: $active-color;
+      color: #fff;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+          0px 2px 2px $box-shadow-primary-color;
     }
   }
 
