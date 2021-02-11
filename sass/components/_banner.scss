@@ -1,0 +1,13 @@
+.banner__container {
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    display: block;
+    margin-bottom: 30px;
+
+    &--radio {
+        margin-right: 10px;
+    }
+}

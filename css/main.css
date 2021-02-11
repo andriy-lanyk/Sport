@@ -609,6 +609,8 @@ footer {
 
 .news-all {
   margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .news-all__link {
@@ -620,5 +622,23 @@ footer {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #2196f3;
+}
+
+.banner__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.banner--radio {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=main.css.map */
