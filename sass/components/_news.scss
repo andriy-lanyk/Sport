@@ -1,3 +1,13 @@
+.news__title {
+  padding-top: 30px;
+  margin-top: 0;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-title-mobile;
+  line-height: $line-height-title;
+  text-align: center;
+  color: $text-title-color;
+}
+
 .news-main {
     margin-bottom: 30px;
 

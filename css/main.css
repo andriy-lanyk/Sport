@@ -327,7 +327,7 @@ section {
 
 header {
   padding: 0 15px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   background-color: #e0e0e0;
 }
 
@@ -508,6 +508,16 @@ footer {
 
 .navigation__link:hover, .navigation__link:focus {
   color: #2196f3;
+}
+
+.news__title {
+  padding-top: 30px;
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  color: #212121;
 }
 
 .news-main {
